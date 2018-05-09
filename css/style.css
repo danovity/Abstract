@@ -363,7 +363,7 @@ body {
 .footer {
   grid-column: -1/1;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr min-content;
   background-color: #33303e; }
   .footer__row-one {
     display: grid;
