@@ -1,0 +1,41 @@
+.icon_block{
+    display:flex;
+    align-items: center;
+
+    &--1{
+        align-self:end;
+    }
+
+    &--2{
+        
+    }
+
+    &--3{
+        align-self:start;
+    }
+
+
+    &__img{
+        padding: 1.5vw;
+        border-radius: 100%;
+        height: 6vw;
+
+        
+        
+        &--1{
+            background-color:#f0e9f3;
+        }
+    
+        &--2{
+            background-color:#e4eff6;
+        }
+    
+        &--3{
+            background-color:#daf1ed;
+        }
+    }
+
+    &__paragraph{
+        margin-left:2rem;
+    }
+}

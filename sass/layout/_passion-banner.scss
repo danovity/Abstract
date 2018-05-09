@@ -1,0 +1,56 @@
+.passion_banner{
+    grid-column: full-start/full-end;
+    display:grid;
+    grid-template-columns: minmax(min-content, 114rem);
+    justify-content: center; //aligns the whole content container
+    justify-items:center;//aligns the items inside the content container
+    background-image: linear-gradient(
+                                    to right,
+                                    rgba($color-primary-dark, .95), 
+                                    rgba($color-primary-dark, .95)),
+                                    url("../assets/section_hero_03.jpg");
+    background-size: cover;
+    background-position:50% 20%;
+
+    &__container{
+        display:grid;
+        grid-template-columns: 35vw 35vw;
+    }
+
+    &__img{
+        transform: scale(1.4);
+        width: 100%;
+    }
+
+    &__statement{
+        display:grid;
+        padding-left: 3vw;
+        align-content:center;
+    }
+    
+    &__statement__title{
+        font-size: 3.25vw;
+        font-weight: 900;
+        letter-spacing: 0.1vw;
+        text-transform: uppercase;
+
+        &--top{
+            color: #b9c8e5;
+        }
+
+        &--bottom{
+            color: $color-white;
+        }
+    }
+
+    &__statement__content{
+        font-size: 1vw;
+        padding-top: 2vw;
+
+        &--paragraph{
+            color: #b4bee5;
+            font-weight: 500;
+        }   
+    }
+    
+}

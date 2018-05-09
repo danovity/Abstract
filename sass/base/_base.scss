@@ -1,0 +1,131 @@
+//COLOR VARIABLES
+$color-primary:#c908d2;
+$color-primary-purple:#c507c3;
+$color-primary-dark:#533cf3;
+
+$color-white:#ffffff;
+$color-grey:#f8f9fb;
+$color-grey-secondary:#f1f1f1;
+$color-black:#000;
+$color-charcoal:#545454;
+
+$color-green-light:#e6efea;
+$color-purple-light:#faf8fd;
+
+$color-footer:#33313f;
+
+$color-green-line-1:#dde6e1;
+$color-green-line-2:#d9e4dc;
+$color-green-line-3:#d4dfd7;
+$color-green-line-4:#c7d7cd;
+$color-green-line-5:#bfd1c5;
+
+$color-purple-line-6:#e7e4ed;
+$color-purple-line-7:#eae7f0;
+$color-purple-line-8:#eae9ef;
+$color-purple-line-9:#dddce4;
+$color-purple-line-10:#d6d3de;
+
+$color-grey-footer:#33303e;
+
+
+
+//FONT VARIABLES
+$font-primary:'Lato', sans-serif;
+$font-large:5rem;
+$font-large-1:4rem;
+$font-medium:3rem;
+$font-default:1.6rem;
+$font-small:2.5rem;
+
+
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+
+/* RESET */
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+
+html{
+    box-sizing:border-box;
+    font-size:62.5%; //default font-size, 1rem=10px
+
+    @include respond(big-desktop){ //1800
+        font-size:75%;//1rem=12px, 12/16=75%
+    }
+
+    @include respond(tab-land){//width < 1200?
+        font-size:56.25%;//1rem=9px, 9/16=56.25%
+    }
+
+    @include respond(tab-port){//width < 900? when the screen becomes smaller than 600px, will use this mediaquery instead
+        font-size:50%;//1rem=8px, 8/16=50%
+    }
+
+   
+}
+
+body{
+    font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;
+    width:100%;
+    min-width:310px; 
+}
+
+.container{
+
+    
+
+    display:grid;
+    grid-template-rows: 100vh repeat(6, min-content) 80vw repeat(2, min-content) 1fr 40vw min-content 30vw min-content;    
+    grid-template-columns:[full-start] 1fr [center-start] repeat(3, minmax(min-content,38rem))[center-end] 1fr [full-end];
+
+    @media only screen and (max-width: 1000px) {
+        grid-template-rows: 100vh repeat(6, min-content) 90vw repeat(2, min-content) 1fr 40vw min-content 30vw min-content;
+    }
+
+    @media only screen and (max-width: 800px) {
+        grid-template-rows: 100vh repeat(4, min-content) 130vw min-content min-content repeat(2, min-content) 1fr 50vw min-content 30vw min-content;    
+    }
+
+    @media only screen and (max-width: 700px) {
+        grid-template-rows: 80vh repeat(4, min-content) 155vw min-content min-content repeat(2, min-content) 1fr 60vw min-content 30vw min-content;    
+    }
+
+    @media only screen and (max-width: 600px) {
+        grid-template-rows: 80vh repeat(4, min-content) 165vw min-content min-content repeat(2, min-content) 1fr 60vw min-content 30vw min-content;    
+    }
+
+    @media only screen and (max-width: 500px) {
+        grid-template-rows: 80vh repeat(4, min-content) 165vw min-content min-content repeat(2, min-content) 1fr 90vw min-content 30vw min-content;    
+    }
+
+    @media only screen and (max-width: 400px) {
+        grid-template-rows: 80vh repeat(4, min-content) 180vw min-content min-content repeat(2, min-content) 1fr 90vw min-content 30vw min-content;    
+    }
+
+    @media only screen and (max-width: 350px) {
+        grid-template-rows: 80vh repeat(4, min-content) 190vw min-content min-content repeat(2, min-content) 1fr 190vw min-content 30vw min-content;    
+    }
+
+    @media only screen and (max-width: 330px) {
+        grid-template-rows: 80vh repeat(4, min-content) 210vw min-content min-content repeat(2, min-content) 1fr 190vw min-content 30vw min-content;    
+    }
+}
+
+section{
+    @include respond(tab-land){//width < 1200?
+        padding:1rem;//1rem=9px, 9/16=56.25%
+    }
+}

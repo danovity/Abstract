@@ -1,0 +1,14 @@
+{
+  "name": "01-single-modern-theme",
+  "version": "1.0.0",
+  "description": "Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w='sass/*/*.scss'"
+  },
+  "author": "Sean",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

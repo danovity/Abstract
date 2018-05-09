@@ -1,0 +1,15 @@
+.our_team{
+    grid-column: full-start/full-end;
+    display:grid;
+    grid-template-columns: minmax(min-content, 114rem);
+    justify-content: center; //aligns the whole content container
+    justify-items:center;//aligns the items inside the content container
+    background-color: $color-white;
+
+    &__layout{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    }
+}

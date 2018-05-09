@@ -1,0 +1,68 @@
+.work_process{
+    grid-column: full-start/full-end;
+    display:grid;
+    grid-template-columns: minmax(min-content, 114rem);
+    justify-content: center; //aligns the whole content container
+    background-color: $color-white;
+
+    &-step{
+        display:grid;
+        grid-template-rows:min-content 1fr min-content;
+        justify-items: center;
+        
+        &__number{
+            font-size: $font-large-1;
+            font-weight: 900;
+
+            &--01{
+                color:#f4dcf9;
+            }
+            &--02{
+                color:#f0ddfa;
+            }
+            &--03{
+                color:#ebe0fc;
+            }
+            &--04{
+                color:#e2ddf4;
+            }
+        }
+
+        &__img-container{
+            width: 100%;
+            height: auto;
+        }
+
+        &__img{
+            width: 100%;
+            height: auto;
+        }
+
+        &__name{
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color:$color-charcoal;
+            font-weight:700;
+            text-align: center;
+        
+        }
+    }
+
+    &-next{
+        align-self: center;
+        justify-self: center;
+        font-size: $font-small;
+        margin-top: .8vw;
+        color: #d0d0d0;
+    }
+    
+}
+
+.work_process-row-two{
+    grid-column: -1/1;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem,1fr));
+
+
+}

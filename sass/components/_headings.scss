@@ -1,0 +1,59 @@
+.heading-primary{
+    font-size:$font-large;
+    color:$color-white;
+}
+
+.heading-secondary{
+    font-size:$font-medium;
+    color:$color-black;
+    text-transform: uppercase;
+    letter-spacing: .9rem;
+}
+
+.heading-tertiary{
+    font-size:$font-small;
+    color:$color-black;
+
+
+    &--footer{
+        color:$color-white;
+    }
+}
+
+.heading-sub{
+    color:$color-white;
+    font-style: italic;
+    font-family: serif;
+    font-weight:100;
+    font-size:$font-default;
+
+    &__black{
+        color:$color-charcoal;
+    }
+}
+
+.section-title{
+    display:grid;
+    align-items: center;
+    justify-items: center;
+
+    &__image{
+        display:grid;
+        height:4.5rem;
+        width:4.5rem;
+        border-radius: 100%;
+        background-image:linear-gradient(
+            to right bottom,
+            $color-primary,
+            $color-primary-dark);
+    }
+
+    &__icon{
+        align-self: center;
+        justify-self:center;
+
+        &-svg{
+            width: 50%;
+        }
+    }
+}

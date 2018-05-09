@@ -1,0 +1,28 @@
+.portfolio_header{
+    grid-column: full-start/full-end;
+    display:grid;
+    grid-template-columns: minmax(min-content, 114rem);
+    justify-content: center; //aligns the whole content container
+    justify-items:center;//aligns the items inside the content container
+}
+
+.portfolio_header-row-one{
+
+}
+
+.portfolio_header-row-two{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    &__btn{
+        font-weight:700;
+        
+        &:not(:last-child){
+            margin-right:1rem;
+        }
+
+        
+    }
+}

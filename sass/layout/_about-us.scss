@@ -1,0 +1,141 @@
+.about_us{
+    grid-column: full-start/full-end;
+    display:grid;
+    grid-template-columns: minmax(min-content, 114rem);
+    justify-content: center; //aligns the whole content container
+    justify-items:center;//aligns the items inside the content container
+    background-color: $color-white;
+    grid-template-rows: min-content 50vw;
+
+    @media only screen and (max-width: 800px) {
+        grid-template-rows: min-content min-content;
+    }
+}
+
+.about_us-row-two{
+    display:grid;
+    grid-template-columns: 40vw 40vw;
+
+    &__container{
+        display:grid;
+        position:relative;
+
+        @media only screen and (max-width: 800px) {
+            position:none;
+            height:100%;
+            align-items:center;
+            width:100%;
+        }
+
+        @media only screen and (max-width: 350px) {
+            width:80%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        grid-template-columns: 80vw;
+        grid-template-rows: min-content 60vw;
+        grid-row-gap: 5rem;
+        justify-items: center;
+    }
+
+    @media only screen and (max-width: 700px) {
+        grid-template-rows: min-content 80vw;
+    }
+
+    @media only screen and (max-width: 350px) {
+        grid-template-columns: 100vw;
+    }
+    
+}
+
+.about_us-template{
+    background-color:#fbfcfb;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    justify-self:end;
+    width:75%;
+    padding: 0 3vw 3vw 3vw;
+    margin-right: 6vw;
+
+    display:grid;
+    grid-template-rows: min-content min-content;
+    justify-items: center;
+
+    &--1{
+        z-index:4;
+        position: absolute;
+
+        @media only screen and (max-width: 800px) {
+            position:initial;
+        }
+    }
+
+    &--2{
+        padding: 3vw;
+        top: 5vw;
+        left: -4vw;
+        z-index: 1;
+        position:absolute;
+
+        @media only screen and (max-width: 800px) {
+            position:initial;
+            transform: translateY(-37vw) translateX(-20vw) scale(0.75);
+        }
+    }
+
+    &__icon{
+        background-color:$color-green-light;
+        border-radius:100%;
+        padding:4vw;
+        border:1vw solid $color-white;
+
+        transform:translateY(3rem);
+
+        &__img{
+            width:6vw;
+            display:block;
+        }
+    }
+
+    &__content{
+        width:100%;
+        padding: 6vw 2.5vw 4vw 2.5vw;
+        background-color:$color-green-light;
+
+        &--2{
+            background-color:$color-purple-light;
+        }
+    }
+
+    
+}
+
+.about_us-description{
+    display:grid;
+    grid-template-rows: min-content min-content 1fr;
+
+    @media only screen and (max-width: 800px) {
+        justify-items:none;
+        transform:translateY(-30vw);
+    }
+
+    &__paragraph{
+        align-self:start;
+    }
+
+    &__icon-container{
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+}
+
+/*
+    .list__item::before {
+        background-color: var(--color-primary);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size: cover;
+        background-image: none;
+*/

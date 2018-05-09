@@ -1,0 +1,57 @@
+.u-margin-top-xlarge{
+    margin-top:12vw;
+}
+
+.u-margin-top-large{
+    margin-top:6vw;
+}
+
+.u-margin-top-medium{
+    margin-top:4vw;
+}
+
+.u-margin-top-small{
+    margin-top:2vw;
+}
+
+.u-margin-bottom-medium{
+    margin-bottom:4vw;
+}
+
+.u-margin-bottom-large{
+    margin-bottom:6vw;
+}
+
+.u-padding-top-large{
+    padding-top:6vw;
+}
+
+.u-padding-bottom-section{
+    padding-bottom:12vw;
+}
+
+.u-padding-bottom-medium{
+    padding-bottom:4vw;
+}
+
+.container-bottom-style{
+
+    justify-self: end;
+    align-self: end;
+
+    &__line{
+        display: block;
+
+        height: 0.5rem;
+        width: 11rem;
+        background-image:linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+        border-radius: 0.5rem;
+        transform: translateY(0.25rem);
+
+        &--footer{
+            background-color:$color-primary-purple;
+            background-image:none;
+            width:2rem;
+        }
+    }
+}
