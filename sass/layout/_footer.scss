@@ -85,8 +85,12 @@
 }
 
 .footer-container{
-    border-bottom:solid 1px $color-grey-secondary;
-    padding-bottom:3vw;
+    
+
+    @media only screen and (max-width: 800px) {
+        border-bottom:solid 1px $color-grey-secondary;
+        padding-bottom:3vw;
+    }
 
     &__header{
         
