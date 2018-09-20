@@ -4,9 +4,9 @@ PSD to HTML conversion for a fictitious company called "Abstract".
 
 ## Description
 
-- Utilized CSS Grid and CSS Flexbox to make the site responsive.
+Utilized CSS Grid and CSS Flexbox to make the site responsive.
 
-### 1. Webpage Link
+### Webpage Link
 
 https://danovity.github.io/Abstract/
 
