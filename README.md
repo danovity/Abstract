@@ -1,9 +1,10 @@
 # Abstract(PSD TO HTML Conversion) Project
 
-- PSD to HTML conversion for a fictitious company called "Abstract".
-- Utilized CSS Grid and CSS Flexbox to make the site responsive.
+PSD to HTML conversion for a fictitious company called "Abstract".
 
-## Final Product
+## Description
+
+- Utilized CSS Grid and CSS Flexbox to make the site responsive.
 
 ### 1. Webpage Link
 
